@@ -1,0 +1,163 @@
+ <html>
+<head>
+<title>
+Table-Row & Column Merge
+</title>
+
+<style>
+table, th, td{
+	border:1px solid;
+	border-collapse: collapse;
+	padding:10px;
+	margin:10px;
+}
+
+td{
+	text-align:center;
+}
+
+#t1{
+	background-color: yellow;
+}
+
+#t2{
+	background-color: #f1f1c1;
+}
+
+#t3 tr:nth-child(even){
+	background-color: yellow;
+}
+
+#t3 tr:nth-child(odd){
+	background-color: #fff;
+}
+
+#t3 td:nth-child(4){
+    background-color: #fff;
+}
+
+#t3 td:nth-child(5){
+    background-color: #fff;
+}
+
+</style>
+
+</head>
+<body>
+
+<table id="t2"  align="center" style="width:95%;border:1px solid;">
+<caption style="font-size:20px;margin:10px;">Education Details</caption>
+
+	<tr style="font-family:arial;">
+		<th>
+			Education
+		</th>
+		<th>
+			School/University
+		</th>
+		<th>
+			Passing Year
+		</th>
+		<th colspan="2">
+			Mark
+		</th>
+	</tr>
+	<tr>
+		<td>
+			10<sup>th</sup>
+		</td>
+		<td>
+			DAV SchoolABfhfhfhfhfhfhf
+		</td>
+		<td>
+			2000
+		</td>
+		<td rowspan="2">
+			600 (Full Mark)
+		</td>
+		<td rowspan="2">
+			80%
+		</td>
+	</tr>
+	<tr>
+		<td>
+			12<sup>th</sup>
+		</td>
+		<td>
+			DAV School
+		</td>
+		<td>
+			2002
+		</td>
+	</tr>
+	
+</table>
+
+<br/><br/>
+
+<table style="width:100%">
+  <tr>
+    <th>Name:</th>
+    <td>Bill Gates</td>
+  </tr>
+  <tr>
+    <th rowspan="2">Telephone:</th>
+    <td>55577854</td>
+  </tr>
+  <tr>
+    <td>55577855</td>
+  </tr>
+</table>
+
+
+<table id="t3"  align="center" style="width:95%;border:1px solid;">
+<caption style="font-size:20px;margin:10px;">Education Details</caption>
+
+	<tr style="font-family:arial;">
+		<th>
+			Education
+		</th>
+		<th>
+			School/University
+		</th>
+		<th>
+			Passing Year
+		</th>
+		<th colspan="2">
+			Mark
+		</th>
+	</tr>
+	<tr>
+		<td>
+			10<sup>th</sup>
+		</td>
+		<td>
+			DAV SchoolABfhfhfhfhfhfhf
+		</td>
+		<td>
+			2000
+		</td>
+		<td rowspan="2">
+			600 (Full Mark)
+		</td>
+		<td rowspan="2">
+			80%
+		</td>
+	</tr>
+	<tr>
+		<td>
+			12<sup>th</sup>
+		</td>
+		<td>
+			DAV School
+		</td>
+		<td>
+			2002
+		</td>
+	</tr>
+	
+</table>
+
+
+</body>
+</html>
