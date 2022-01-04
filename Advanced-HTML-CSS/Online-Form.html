@@ -1,0 +1,53 @@
+<html>
+<head>
+
+<script>
+function validate(){
+
+	var fName = document.getElementById("fName").value;
+	if(fName.trim() === ''){
+		alert("First Name should not be empty!");
+	}
+
+	var lName = document.getElementById("lName").value;
+	if(lName.trim() === ''){
+		alert("Last Name should not be empty!");
+	}
+	
+}
+</script>
+
+</head>
+
+<body>
+<label>First Name<strong style="color:red">*</strong> : </label> <input type="text" value="" name="fName" id="fName">
+<br><br>
+<label>Last Name<strong style="color:red">*</strong> : </label> <input type="text" value="" name="lName" id="lName">
+<br><br>
+<label>DOB<strong style="color:red">*</strong> : </label> <input type="date" name="dob" id="dob">
+<br><br>
+<label>Address : </label>
+<br><br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<label>H. No : </label>&nbsp; &nbsp; &nbsp; <input type="text" name="hNo" id="hNo">
+<br><br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<label>Landmark : </label><input type="text" name="landMark" id="landMark">
+<br><br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<label>Country : </label>&nbsp; &nbsp;<input type="text" name="country" id="country">
+<select>
+<option>India</option>
+<option>China</option>
+</select>
+<br><br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<label>State : </label>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<input type="text" name="state" id="state">
+<br><br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<label>City : </label>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<input type="text" name="city" id="city">
+<br><br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<label>Pin No. : </label>&nbsp; &nbsp; <input type="text" name="pinNo" id="pinNo">
+<br/><br/>
+<label>Gender<strong style="color:red">*</strong> : </label> <input type="radio" name="gender"> Male <input type="radio" name="gender">Female <input type="radio"  name="gender">Others 
+<br/><br/>
+<label>Language Known<strong style="color:red">*</strong> : </label> <input type="checkbox"> English <input type="checkbox"> Odiya <input type="checkbox"> Hindi <input type="checkbox"> Others
+<br/><br/>
+<input type="button" value="Submit" onclick="validate();">
+</body>
+</html>

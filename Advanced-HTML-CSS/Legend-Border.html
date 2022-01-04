@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .header-border {
+            width: 100%;
+            margin-bottom: 10px;
+            border: red solid 1px;}
+  
+        .heading, .heading-subtitle {
+            text-align: center;
+            margin-top: -20px
+            }
+ 
+        .heading > span, .heading-subtitle > span {
+            background-color: white;
+            box-shadow: white 11px 0px 0px,
+                white -13px 0px 0px;
+            }
+        .heading-subtitle > span {
+            &:after {
+                top: -13px;}
+            } 
+        
+    </style>
+</head>
+<body>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet"/>
+
+<div class="container">
+  <div class="row">
+    <div class="header-border mt-4">
+      <h2 class="heading"><span>Learn More About What We Do</span></h2>
+      <div class="col-sm-4 mt-5">
+        <div class="header-border">
+          <h4 class="heading-subtitle"><span>Coding School</span></h4>
+          <p>Avi's Coding Ins. is a pioneer coding school in our locality. It is for both beginners and advance learners as well. We have taught over 1500 people to code and design with us.</p>
+           <div class="text-center">
+             <a class="btn btn-sm btn-primary" href="#">Read More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> <!-- row-->
+</div><!-- container -->
+</body>
+</html>

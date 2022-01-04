@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>1st page</title>
+	<style>
+		.nav-links{
+  			box-sizing: border-box;
+  			height: 40px;
+  			margin: 0;
+  			border: 0;
+  			background-color: #24252A;
+  			list-style: none;
+  			
+		}
+  		li a{
+  			font-family: sans-serif;
+  			font-weight: 900;
+  			font-size: 15px;
+  			color: white;
+  			float: left;
+  			padding: 5px 70px;
+  			border-right:1px solid yellow; 
+  			text-decoration:none !important;
+  			  
+		}
+		.lit{
+			font-family: sans-serif;
+  			font-weight: 900;
+  			font-size: 15px;
+  			color: white;
+  			float: left;
+  			text-align: center;
+  			text-decoration:none !important;
+		}
+		a:hover {
+    		color:white;
+    		text-decoration:none;
+    		cursor:pointer;
+		}
+  		.active{
+  			background-color: pink;
+  		}
+
+
+		inside .img-base {width: 50%;}
+
+		.inside {
+    	padding: 20px 30px;
+    	border-left: 10px solid #000;
+    	border-right: 10px solid #000;
+    	border-radius: 10px;
+    	background: #fff;
+    	max-width: 850px;
+    	margin: auto;
+    	display: flex;
+    	}
+    	
+    	.frm-pos {position: relative;}
+
+    	.ins-frm {
+    		padding-top: 10px;
+   		 	padding-left: 30px;
+    		padding-right: 30px;
+			}
+		.frm-base {
+    		border: 1px solid black;
+    		border-top: none;
+    		border-right: none;
+    		border-left: none;
+    		display: block;
+    		width: 200%;
+    		height: 30px;
+    		padding: 0;
+    		margin-bottom: 25px;
+				}	
+		#mid{margin-top: 13%;
+  			margin-bottom: 13%;}
+  		
+
+
+  			/*{margin-right: 150px
+  			margin-left: 80px;}	*/
+
+	</style>
+</head>
+<body style="background-image:url(4463009-bubbles-wallpapers.jpg); margin: auto; ">
+	<div>
+
+		<ul class="nav-links" >
+			<li class="active li"> <a href="q">AVI<span style="color: red">'</span>S</a></li>
+			<li class="li"><a href="w">About Us</a></li>
+			<li class="li"><a href="e">Products</a></li>
+			<li class="li"><a href="r">Gallery</a></li>
+			<li class="li"><a href="r">Our Blogs</a></li>
+			<li class="lit"><a href="e">Contact Us</a></li>
+		</ul>
+	
+	</div>
+	<div class="inside " id="mid">
+		<div class="img-base">
+			<img src="prcp.jpg" alt="qwert">
+		</div>
+		<form class="ins-frm">
+			<h3>User Login</h3>
+			<div class="frm-pos">
+				<input type="text" id="emailId" placeholder="Mail-ID" name="MAIL-ID" class="frm-base">
+			</div>
+			<div class="frm-pos">
+				<input type="password" id="password" placeholder="Password" name="PASSWORD" class="frm-base">
+			</div>
+			<input type="button" value="Login" name="LOGIN" onclick="submitLogin()">
+		</form>
+	</div>
+</body>
+<script src="jquery.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.19.0/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.19.0/firebase-analytics.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.19.0/firebase-database.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.19.0/firebase-auth.js"></script>
+<script>
+	function submitLogin(){ 
+		alert("Hi, we saved your Id & Pswd. ");
+		}
+</script>
+  </html>
